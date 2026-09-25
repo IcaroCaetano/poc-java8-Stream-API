@@ -1,5 +1,7 @@
 # POC Java 8 Stream API
 
+## Sumário
+
 ### 1 Stream básico
 - stream()
 - filter()
