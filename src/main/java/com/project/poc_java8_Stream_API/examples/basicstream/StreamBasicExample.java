@@ -12,11 +12,11 @@ public class StreamBasicExample {
     public static void main(String[] args) {
 
         List<User> users = Arrays.asList(
-                new User("John", true),
-                new User("Mary", false),
-                new User("Robert", true),
-                new User("Alice", false),
-                new User("Michael", true)
+                new User("John", 34,true),
+                new User("Mary", 45,false),
+                new User("Robert",32, true),
+                new User("Alice", 29,false),
+                new User("Michael", 43,true)
         );
 
         users.stream()
