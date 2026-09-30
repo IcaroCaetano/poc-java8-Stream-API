@@ -29,5 +29,21 @@ public class Example05Sorted {
          * Mary
          * Michael
          */
+
+        System.out.println();
+
+        users.stream()
+                .filter(User::isActive)
+                .sorted((user1, user2) ->
+                        Integer.compare(user1.getAge(), user2.getAge()))
+                .forEach(user ->
+                        System.out.println(user.getName() + " - " + user.getAge()));
+
+        /**
+         * John - 17
+         * Michael - 21
+         * Mary - 25
+         * Alice - 32
+         */
     }
 }
