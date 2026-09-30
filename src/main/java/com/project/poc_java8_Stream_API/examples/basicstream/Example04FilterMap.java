@@ -21,7 +21,7 @@ public class Example04FilterMap {
                 .filter(user -> user.getAge() >= 18)
                 .filter(User::isActive)
                 .map(User::getName)
-                .map(String::toUpperCase)
+                .map(String::toUpperCase) // u ->  u.toUpperCase()
                 .forEach(System.out::println);
     }
 }
