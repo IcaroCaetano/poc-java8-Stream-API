@@ -3,6 +3,7 @@ package com.project.poc_java8_Stream_API.examples.basicstream;
 import com.project.poc_java8_Stream_API.model.User;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Example05Sorted {
@@ -45,5 +46,13 @@ public class Example05Sorted {
          * Mary - 25
          * Alice - 32
          */
+
+        System.out.println();
+
+        users.stream()
+                .filter(User::isActive)
+                .sorted(Comparator.comparing(User::getAge))
+                .forEach(user -> System.out.println(
+                        user.getName() + " - " + user.getAge()));
     }
 }
