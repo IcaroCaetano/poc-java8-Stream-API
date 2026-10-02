@@ -42,3 +42,5 @@
 - parallelStream()
 - quando o usar
 - riscos e cuidados
+
+###
