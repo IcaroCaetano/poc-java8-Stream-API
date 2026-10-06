@@ -33,5 +33,11 @@ public class Example08FindAndMatch {
 
         System.out.println(result.get().getName() + " - " +
                 result.get().getAge() + " - Is Active: " + result.get().isActive());
+
+        // anyMatch
+        boolean exists = users.stream()
+                .anyMatch(u -> u.getAge() > 30);
+
+        System.out.println("Exists: " + exists);
     }
 }
