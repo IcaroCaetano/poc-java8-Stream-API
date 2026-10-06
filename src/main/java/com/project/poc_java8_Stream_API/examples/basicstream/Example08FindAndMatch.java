@@ -30,5 +30,8 @@ public class Example08FindAndMatch {
         Optional<User> result = users.stream()
                 .filter(User::isActive)
                 .findAny();
+
+        System.out.println(result.get().getName() + " - " +
+                result.get().getAge() + " - Is Active: " + result.get().isActive());
     }
 }
