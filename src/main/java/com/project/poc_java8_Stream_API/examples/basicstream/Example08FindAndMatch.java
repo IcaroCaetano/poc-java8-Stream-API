@@ -39,5 +39,14 @@ public class Example08FindAndMatch {
                 .anyMatch(u -> u.getAge() > 30);
 
         System.out.println("Exists: " + exists);
+
+
+        // allMatch
+        boolean allAdults = users.stream()
+                .allMatch(u -> u.getAge() >= 18);
+
+        System.out.println("All adults: " + allAdults);
+
+
     }
 }
