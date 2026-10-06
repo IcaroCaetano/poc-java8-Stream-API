@@ -48,5 +48,10 @@ public class Example08FindAndMatch {
         System.out.println("All adults: " + allAdults);
 
 
+        //  noneMatch
+        boolean noneUnder18 = users.stream()
+                .noneMatch(u -> u.getAge() < 18);
+
+        System.out.println("None under 18: " + noneUnder18);
     }
 }
